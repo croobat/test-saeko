@@ -5,6 +5,7 @@
 	<title>Piedra - papel - tijera</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -12,31 +13,44 @@
 	<h1>Piedra, Papel o Tijera</h1>
 	<div id="score-container">
 		<div id="scores">
-			<span id="user-score">0</span>
-			-
-			<span id="computer-score">0</span>
+			<span id="user-score">0</span>-<span id="computer-score">0</span>
 		</div>
 		<span id="score-label">marcador</span>
 	</div>
 	<div id="game">
 		<div id="user-game">
-			<h2 id="user-title">Tu</h2>
-			<span id="description">Selecciona una opción</span>
-			<button id="user-rock">Rock</button>
-			<button id="user-paper">Paper</button>
-			<button id="user-scissors">Scissors</button>
+			<div id="user-interface">
+				<h2 id="user-title">Tu</h2>
+				<span id="description">Selecciona una opción</span>
+				<div id="user-buttons">
+					<button id="user-paper">Paper</button>
+					<button id="user-rock">Rock</button>
+					<button id="user-scissors">Scissors</button>
+				</div>
+			</div>
+			<div id="user-play">
+				&nbsp;
+			</div>
 		</div>
 		<div id="result-container">
 			<span id="result-label" style="display: none;"></span>
 		</div>
 		<div id="computer-game">
-			<h2 id="computer-title">Computadora</h2>
-			<span id="computer-rock">Rock</span>
-			<span id="computer-paper">Paper</span>
-			<span id="computer-scissors">Scissors</span>
+			<div id="computer-play">
+				&nbsp;
+			</div>
+			<div id="computer-interface">
+				<h2 id="computer-title">Computadora</h2>
+				<span id="description">&nbsp;</span>
+				<div id="computer-buttons">
+					<span id="computer-paper">Paper</span>
+					<span id="computer-rock">Rock</span>
+					<span id="computer-scissors">Scissors</span>
+				</div>
+			</div>
 		</div>
 	</div>
-	
+
 	<script src="script.js"></script>
 </body>
 

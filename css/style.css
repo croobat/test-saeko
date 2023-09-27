@@ -1,0 +1,78 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700&family=JetBrains+Mono:wght@300;400&display=swap');
+body {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.6rem;
+    margin: 0;
+    background-color: #c4c4c4;
+    margin-bottom: 4.2rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+#user-score, #computer-score, #scores {
+    font-weight: 400;
+    font-size: 2.6rem;
+}
+
+#score-label {
+    font-size: 1.2rem;
+}
+
+/* Layout */
+#game {
+    display: flex;
+    align-items: center;
+    height: 60%;
+    margin-top: 1rem;
+}
+
+#user-game, #computer-game {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+h2#user-title, h2#computer-title {
+    margin-top: 50px;
+}
+
+#description {
+    display: block;
+    margin-bottom: 2.6rem;
+}
+
+#user-buttons, #computer-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#user-interface, #computer-interface {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#user-rock, #user-paper, #user-scissors,
+#computer-rock, #computer-paper, #computer-scissors {
+    margin: 20px;
+}
+
+/* Styling */
+#user-game {
+    border-right: 1px solid Black;
+}
