@@ -23,13 +23,17 @@
 				<h2 id="user-title">Tu</h2>
 				<span id="description">Selecciona una opción</span>
 				<div id="user-buttons">
-					<button id="user-paper">Paper</button>
-					<button id="user-rock">Rock</button>
-					<button id="user-scissors">Scissors</button>
+					<button class="image-action" id="user-papel"></button>
+					<button class="image-action" id="user-piedra"></button>
+					<button class="image-action" id="user-tijeras"></button>
 				</div>
 			</div>
 			<div id="user-play">
 				&nbsp;
+				<button class="image-action" id="user-play-papel" style=" display: none;"></button>
+				<button class="image-action" id="user-play-piedra" style="display: none;"></button>
+				<button class="image-action" id="user-play-tijeras" style="display: none;"></button>
+				<span id="user-play-title"></span>
 			</div>
 		</div>
 		<div id="result-container">
@@ -38,14 +42,18 @@
 		<div id="computer-game">
 			<div id="computer-play">
 				&nbsp;
+				<button class="image-action" id="computer-play-papel" style="display: none;"></button>
+				<button class="image-action" id="computer-play-piedra" style="display: none;"></button>
+				<button class="image-action" id="computer-play-tijeras" style="display: none;"></button>
+				<span id="computer-play-title"></span>
 			</div>
 			<div id="computer-interface">
 				<h2 id="computer-title">Computadora</h2>
 				<span id="description">&nbsp;</span>
 				<div id="computer-buttons">
-					<span id="computer-paper">Paper</span>
-					<span id="computer-rock">Rock</span>
-					<span id="computer-scissors">Scissors</span>
+					<span class="image-action" id="computer-papel"></span>
+					<span class="image-action" id="computer-piedra"></span>
+					<span class="image-action" id="computer-tijeras"></span>
 				</div>
 			</div>
 		</div>

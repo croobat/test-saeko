@@ -59,20 +59,67 @@ h2#user-title, h2#computer-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #user-interface, #computer-interface {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    flex: 1;
 }
 
-#user-rock, #user-paper, #user-scissors,
-#computer-rock, #computer-paper, #computer-scissors {
+#user-piedra, #user-papel, #user-tijeras,
+#computer-piedra, #computer-papel, #computer-tijeras {
     margin: 20px;
 }
 
 /* Styling */
 #user-game {
     border-right: 1px solid Black;
+}
+
+.image-action {
+    width: calc(200px/3);
+    height: calc(300px/3);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+#user-piedra, #computer-piedra, #user-play-piedra, #computer-play-piedra {
+    background-image: url('../assets/piedra.png');
+}
+
+#user-papel, #computer-papel, #user-play-papel, #computer-play-papel {
+    background-image: url('../assets/papel.png');
+}
+
+#user-tijeras, #computer-tijeras, #user-play-tijeras, #computer-play-tijeras {
+    background-image: url('../assets/tijeras.png');
+}
+
+#result-label {
+    font-size: 4.2rem;
+}
+
+#user-play-papel, #user-play-tijeras, #user-play-piedra,
+#computer-play-papel, #computer-play-tijeras, #computer-play-piedra {
+    width: calc(200px/2);
+    height: calc(300px/2);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: none;
+    margin: 50px 100px;
+}
+
+@media screen and (max-width: 768px) {
+    #game {
+        display: block;
+    }
+
+    #user-game, #computer-game {
+        border: none;
+    }
 }
