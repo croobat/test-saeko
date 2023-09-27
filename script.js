@@ -53,8 +53,13 @@ function updateScore(result) {
 
   userScoreLabel.textContent = playerScore
   computerScoreLabel.textContent = computerScore
-  resultLabel.textContent = result
+
   resultLabel.style.display = "block"
+  resultLabel.textContent = result
+  // Mostrar resultado de la ronda por 3 segundos
+  setTimeout(() => {
+    resultLabel.style.display = "none"
+  }, 5000)
 }
 
 /**
